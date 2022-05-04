@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(216, 234, 210);
+  margin: 0 auto;
+}
+
+html,
+textarea,
+input {
+  font-family: open sans;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-family: open sans;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-family: open sans;
+}
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-family: open sans;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-family: open sans;
+}
+
+/* clear element style  */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(216, 234, 210);
+}
+
+img {
+  vertical-align: middle;
+}
+
+input,
+select {
+  outline: none;
+  border: none;
+}
+
+/* cursor's style of button */
+header {
+  background-color: rgb(36, 16, 17);
+  padding: 8px 20px;
+}
+
+button {
+  cursor: pointer;
+  appearance: none;
+  border: none;
+}
+
+header ul > li {
+  color: rgb(216, 234, 210);
+  display: inline-block;
+  margin: 0 20px;
+}
+
+header ul > li:first-child {
+  margin-left: 0;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: 800;
+  display: inline-block;
+  background-color: rgb(216, 234, 210);
+  color: rgb(36, 16, 17);
+  padding: 3px 8px;
+  margin: 12px 0;
+  border-radius: 5px;
+  box-shadow: 3px 2px rgb(142, 155, 137);
+}
+
+main {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+/* homepage posts style */
+.post-list {
+  margin-top: 5px;
+}
+
+.post-list li {
+  margin-bottom: 15px;
+}
+
+.box {
+  border: 2px solid black;
+}
+.box-title {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  padding: 5px 10px;
+  background-color: black;
+  color: rgb(216, 234, 210);
+}
+
+.box-content {
+  font-size: 12px;
+  padding: 10px;
+  color: black;
+}
+
+/* login page START  */
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form > * {
+  font-size: 12px;
+  padding: 6px 5px;
+  border-radius: 5px;
+}
+
+.form textarea {
+  width: 100%;
+  height: 100px;
+  border: 0;
+  outline: none;
+  resize: none;
+}
+
+.form button {
+  margin-top: 7px;
+  background-color: rgb(102, 102, 102);
+  color: rgb(216, 234, 210);
+}
+
+.box .link {
+  margin-top: 5px;
+}
+
+.box .link a {
+  color: rgb(33, 92, 240);
+  font-size: 12px;
+}
+/* login page End  */
+
+/* single post  */
+.addPost {
+  text-align: center;
+}
+
+.addPost a {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* comment-box */
+.comment-box {
+  font-size: 13px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 2px solid black;
+  border-top: 25px solid black;
+}
+
+.comment-box > * {
+  margin-top: 10px;
+}
+
+.comment-list > * {
+  margin-top: 10px;
+}
