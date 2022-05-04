@@ -1,0 +1,14 @@
+{{>post-info post}}
+
+<div class="comment-box">
+    <div class="comment-list">
+        <p>Comment</p>
+        {{>comment-info post.comments}}
+    </div>
+    <form class="comment-form form">
+        <textarea placeholder="leave your comment" class="comment-area"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script src="/javascripts/add-comment.js"></script>

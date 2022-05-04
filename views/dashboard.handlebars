@@ -1,0 +1,12 @@
+<ol class="post-list">
+    {{#each posts as |post|}}
+    <li>
+        <a href="/dashboard/edit/{{post.id}}">
+            {{>post-info post}}
+        </a>
+    </li>
+    {{/each}}
+</ol>
+<div class="addPost">
+    <a href="/dashboard/create-post">+ New Post</a>
+</div>
