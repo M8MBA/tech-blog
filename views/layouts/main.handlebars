@@ -2,38 +2,47 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Just Tech News</title>
-  <link rel="stylesheet" href="/stylesheets/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tech Blog</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
 <body>
-  <div class="wrapper">
     <header>
-      <h1>
-        <a href="/">Shred-It</a>
-      </h1>
-      <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/dashboard">Dashboard</a>
+                </li>
+
+                {{#if loggedIn}}
+                <li id="logout">
+                    <a href="javascript:;">Logout</a>
+                </li>
+                {{else}}
+                <li>
+                    <a href="/login">login</a>
+                </li>
+                {{/if}}
+
+            </ul>
+        </nav>
+        <h1>The Tech Blog</h1>
     </header>
     <main>
-      {{{ body }}}
+        {{{body}}}
     </main>
     <footer>
-      Thanks for visiting!
+        {{!-- Thanks for visiting --}}
     </footer>
-  </div>
-
-  {{#if loggedIn}}
-  <script src="/javascript/logout.js"></script>
-  {{/if}}
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
