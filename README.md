@@ -7,8 +7,9 @@
     I WANT a CMS-style blog site
     SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
-    OPEN APP:
-    https://warm-tundra-02579.herokuapp.com/
+  ### OPEN APP:https://warm-tundra-02579.herokuapp.com/
+
+  <img width="1403" alt="Screen Shot 2022-05-06 at 3 11 33 PM" src="https://user-images.githubusercontent.com/97080366/167217197-9975618f-df5b-4687-876f-e22cc5769f8e.png">
   
 
   ## Table of Contents:
